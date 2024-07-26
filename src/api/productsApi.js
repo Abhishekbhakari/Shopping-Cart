@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = '/api/products.php'; 
+const BASE_URL = 'https://api.webroot.net.in/products.php'; 
 
 export const getProducts = () => axios.get(BASE_URL);
 
