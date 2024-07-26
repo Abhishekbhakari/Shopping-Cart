@@ -1,13 +1,13 @@
 import axios from 'axios';
 
-const BASE_URL = '/api/products.php'; // Use the proxy path
+const BASE_URL = '/api/products.php'; 
 
 export const getProducts = () => axios.get(BASE_URL);
 
 export const createProduct = async (product) => {
     try {
         const response = await axios.post(BASE_URL, product);
-        console.log('Response:', response.data); // Log the response
+        console.log('Response:', response.data);
         return response.data;
     } catch (error) {
         console.error('Error creating product:', error);
